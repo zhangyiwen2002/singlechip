@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>2</fileVersion>
+    <fileChecksum>2104075617</fileChecksum>
+    <configuration>
+        <name>Debug</name>
+        <outputs>
+            <file>$TOOLKIT_DIR$\lib\dlib\dl430fn.r43</file>
+            <file>$TOOLKIT_DIR$\config\multiplier.xcl</file>
+            <file>$PROJ_DIR$\Debug\Exe\new1.hex</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\time.h</file>
+            <file>$PROJ_DIR$\Debug\Exe\design.hex</file>
+            <file>$PROJ_DIR$\LCD1602.h.c</file>
+            <file>$PROJ_DIR$\Debug\Exe\design.d43</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\ysizet.h</file>
+            <file>$PROJ_DIR$\Debug\List\new2.map</file>
+            <file>$PROJ_DIR$\Debug\Obj\LCD1602.h.r43</file>
+            <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
+            <file>$PROJ_DIR$\config.h</file>
+            <file>$PROJ_DIR$\main.c</file>
+            <file>$PROJ_DIR$\Debug\Exe\new</file>
+            <file>$TOOLKIT_DIR$\config\lnk430F249.xcl</file>
+            <file>$PROJ_DIR$\clock.h</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\ycheck.h</file>
+            <file>$TOOLKIT_DIR$\lib\dlib\dl430fn.h</file>
+            <file>$PROJ_DIR$\LCD1602.h</file>
+            <file>$TOOLKIT_DIR$\config\linker\multiplier.xcl</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Defaults.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\LCD1602.h.pbi</file>
+            <file>$PROJ_DIR$\Debug\Exe\new2.hex</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Product.h</file>
+            <file>$PROJ_DIR$\Debug\Exe\design.ulp</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\yvals.h</file>
+            <file>$TOOLKIT_DIR$\inc\msp430f249.h</file>
+            <file>$TOOLKIT_DIR$\inc\msp430.h</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Threads.h</file>
+            <file>$TOOLKIT_DIR$\inc\in430.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.r43</file>
+            <file>$TOOLKIT_DIR$\config\linker\lnk430f249.xcl</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\xencoding_limits.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\design.pbd</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\stdio.h</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\ystdio.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+        </outputs>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>XLINK</name>
+                    <file> 22 8</file>
+                </tool>
+                <tool>
+                    <name>ULP430</name>
+                    <file> 24</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\new1.hex</name>
+            <inputs>
+                <tool>
+                    <name>XLINK</name>
+                    <file> 31 19 30 0</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\design.hex</name>
+            <inputs>
+                <tool>
+                    <name>XLINK</name>
+                    <file> 14 1 30 0</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LCD1602.h.c</name>
+            <outputs>
+                <tool>
+                    <name>ICC430</name>
+                    <file> 9</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 21</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\design.d43</name>
+            <inputs>
+                <tool>
+                    <name>XLINK</name>
+                    <file> 31 19 30 0</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICC430</name>
+                    <file> 30</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 36</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICC430</name>
+                    <file> 3 16 25 20 17 23 32 28 7 27 26 29 10 18 11 34 35 15</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 15 25 20 28 29 16 18 27 34 11 7 32 17 23 26 10 3 35</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\new</name>
+            <inputs>
+                <tool>
+                    <name>XLINK</name>
+                    <file> 31 19 30 0</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\new2.hex</name>
+            <outputs>
+                <tool>
+                    <name>XLINK</name>
+                    <file> 8</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>XLINK</name>
+                    <file> 31 19 30 0</file>
+                </tool>
+            </inputs>
+        </file>
+    </configuration>
+    <configuration>
+        <name>Release</name>
+        <outputs />
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>XLINK</tool>
+        </forcedrebuild>
+    </configuration>
+</project>

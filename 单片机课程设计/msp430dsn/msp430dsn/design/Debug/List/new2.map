@@ -1,0 +1,1392 @@
+################################################################################
+#                                                                              #
+#      IAR Universal Linker V6.4.6.89                                          #
+#                                                                              #
+#           Link time     =  21/Feb/2023  10:52:26                             #
+#           Target CPU    =  MSP430                                            #
+#           List file     =  F:\单片机\单片机课程设计\msp430dsn\msp430dsn\desi #
+#                            gn\Debug\List\new2.map                            #
+#           Output file 1 =  F:\单片机\单片机课程设计\msp430dsn\msp430dsn\desi #
+#                            gn\Debug\Exe\new2.hex                             #
+#                            Format: intel-extended                            #
+#           Command line  =  -f C:\Users\zhang\AppData\Local\Temp\EWDF51.tmp   #
+#                            (F:\单片机\单片机课程设计\msp430dsn\msp430dsn\des #
+#                            ign\Debug\Obj\main.r43                            #
+#                            -o                                                #
+#                            F:\单片机\单片机课程设计\msp430dsn\msp430dsn\desi #
+#                            gn\Debug\Exe\new2.hex                             #
+#                            -Fintel-extended -l                               #
+#                            F:\单片机\单片机课程设计\msp430dsn\msp430dsn\desi #
+#                            gn\Debug\List\new2.map                            #
+#                            -xms -IE:\SoftWare\isa\430\LIB\ -f                #
+#                            E:\SoftWare\isa\430\config\linker\lnk430f249.xcl  #
+#                            (-cmsp430 -QCODE_I=CODE_ID -QTLS16_I=TLS16_ID     #
+#                            -D__iar_HWMUL=130 -Z(CONST)INFO=1000-10FF         #
+#                            -Z(CONST)INFOA=10C0-10FF                          #
+#                            -Z(CONST)INFOB=1080-10BF                          #
+#                            -Z(CONST)INFOC=1040-107F                          #
+#                            -Z(CONST)INFOD=1000-103F                          #
+#                            -Z(DATA)DATA16_I,DATA16_Z,DATA16_N,TLS16_I=0200-0 #
+#                            9FF                                               #
+#                            -Z(DATA)DATA16_HEAP+_DATA16_HEAP_SIZE             #
+#                            -Z(DATA)CODE_I -Z(DATA)CSTACK+_STACK_SIZE#        #
+#                            -Z(CONST)DATA16_C,DATA16_ID,TLS16_ID,DIFUNCT,CHEC #
+#                            KSUM=1100-FFBF                                    #
+#                            -Z(CODE)CSTART,ISR_CODE,CODE_ID=1100-FFBF         #
+#                            -P(CODE)CODE=1100-FFBF                            #
+#                            -Z(CONST)SIGNATURE=FFDE-FFDF                      #
+#                            -Z(CODE)INTVEC=FFC0-FFFF                          #
+#                            -Z(CODE)RESET=FFFE-FFFF) -f                       #
+#                            E:\SoftWare\isa\430\config\linker\multiplier.xcl  #
+#                            (-e?Mul8Hw=?Mul8 -e?Mul16Hw=?Mul16                #
+#                            -e?Mul16to32uHw=?Mul16to32u                       #
+#                            -e?Mul16to32sHw=?Mul16to32s -e?Mul32Hw=?Mul32     #
+#                            -e_Mul64iHw=_Mul64i                               #
+#                            -e_Mul32u32uto64iHw=_Mul32u32uto64i               #
+#                            -e?Mul32fHw=_Mul32f -e_Mul64fHwPtr=_Mul64fPtr)    #
+#                            -D_STACK_SIZE=50                                  #
+#                            E:\SoftWare\isa\430\lib\dlib\dl430fn.r43          #
+#                            -e_PrintfLarge=_Printf -e_ScanfLarge=_Scanf       #
+#                            -D_DATA16_HEAP_SIZE=50 -s __program_start         #
+#                            -D_DATA20_HEAP_SIZE=50)                           #
+#                                                                              #
+#                           Copyright (C) 1987-2016 IAR Systems AB.            #
+################################################################################
+
+
+
+
+
+                ****************************************
+                *                                      *
+                *           CROSS REFERENCE            *
+                *                                      *
+                ****************************************
+
+       Program entry at :           1192  Relocatable, from module : ?cstart
+
+
+
+
+                ****************************************
+                *                                      *
+                *            RUNTIME MODEL             *
+                *                                      *
+                ****************************************
+
+  __Heap_Handler             = Basic
+  __SystemLibrary            = DLib
+  __core                     = 430
+  __dlib_file_descriptor     = 0
+  __dlib_full_locale_support = 0
+  __double_size              = 32
+  __pic                      = no
+  __reg_r4                   = free
+  __reg_r5                   = free
+  __rt_version               = 3
+
+                ****************************************
+                *                                      *
+                *    AUTOMATIC SYMBOL REDIRECTIONS     *
+                *                                      *
+                ****************************************
+
+                  There are no automatic symbol redirections.
+
+
+
+                ****************************************
+                *                                      *
+                *              MODULE MAP              *
+                *                                      *
+                ****************************************
+
+
+  DEFINED ABSOLUTE ENTRIES
+    *************************************************************************
+
+  DEFINED ABSOLUTE ENTRIES
+  PROGRAM MODULE, NAME : ?ABS_ENTRY_MOD
+
+Absolute parts
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _DATA20_HEAP_SIZE       0050 
+           _DATA16_HEAP_SIZE       0050 
+           _STACK_SIZE             0050 
+           __iar_HWMUL             0130            ?Mul16to32sHw (?Mul16to32sHw)
+                                                   ?Mul32Hw (?Mul32Hw)
+                                                   display_year (main)
+    *************************************************************************
+
+  FILE NAME : F:\单片机\单片机课程设计\msp430dsn\msp430dsn\design\Debug\Obj\main.r43
+  PROGRAM MODULE, NAME : main
+
+  SEGMENTS IN THE MODULE
+  ======================
+DATA16_AN
+  Relative segment, address: 0021 - 0021 (0x1 bytes), align: 0
+  Segment part 1. ROOT        Intra module refs:   Port_2
+                                                   Timer_A
+                                                   main
+                                                   setdate
+                                                   setday
+                                                   sethour
+                                                   setmin
+                                                   setmonth
+                                                   setyear
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P1OUT                   0021 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0022 - 0022 (0x1 bytes), align: 0
+  Segment part 2. ROOT        Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P1DIR                   0022 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0028 - 0028 (0x1 bytes), align: 0
+  Segment part 3. ROOT        Intra module refs:   getkey
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P2IN                    0028 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 002B - 002B (0x1 bytes), align: 0
+  Segment part 4. ROOT        Intra module refs:   Port_2
+                                                   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P2IFG                   002B 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 002C - 002C (0x1 bytes), align: 0
+  Segment part 5. ROOT        Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P2IES                   002C 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 002D - 002D (0x1 bytes), align: 0
+  Segment part 6. ROOT        Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P2IE                    002D 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0019 - 0019 (0x1 bytes), align: 0
+  Segment part 7. ROOT        Intra module refs:   LCD1602_write_com
+                                                   LCD1602_write_data
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P3OUT                   0019 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 001A - 001A (0x1 bytes), align: 0
+  Segment part 8. ROOT        Intra module refs:   Port1602_init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P3DIR                   001A 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 001B - 001B (0x1 bytes), align: 0
+  Segment part 9. ROOT        Intra module refs:   Port1602_init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P3SEL                   001B 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 001D - 001D (0x1 bytes), align: 0
+  Segment part 10. ROOT       Intra module refs:   LCD1602_write_com
+                                                   LCD1602_write_data
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P4OUT                   001D 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 001E - 001E (0x1 bytes), align: 0
+  Segment part 11. ROOT       Intra module refs:   Port1602_init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P4DIR                   001E 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 001F - 001F (0x1 bytes), align: 0
+  Segment part 12. ROOT       Intra module refs:   Port1602_init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P4SEL                   001F 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0160 - 0161 (0x2 bytes), align: 0
+  Segment part 13. ROOT       Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TACTL                   0160 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0162 - 0163 (0x2 bytes), align: 0
+  Segment part 14. ROOT       Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TACCTL0                 0162 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0172 - 0173 (0x2 bytes), align: 0
+  Segment part 15. ROOT       Intra module refs:   Timer_A
+                                                   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TACCR0                  0172 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0120 - 0121 (0x2 bytes), align: 0
+  Segment part 16. ROOT       Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           WDTCTL                  0120 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 24EA - 24FD (0x14 bytes), align: 1
+  Segment part 37.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Port1602_init           24EA 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 23FC - 2421 (0x26 bytes), align: 1
+  Segment part 38.            Intra module refs:   LCD1602_clear
+                                                   LCD1602_init
+                                                   LCD1602_write_char
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           LCD1602_write_com       23FC 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 23B0 - 23D5 (0x26 bytes), align: 1
+  Segment part 39.            Intra module refs:   LCD1602_write_char
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           LCD1602_write_data      23B0 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 2548 - 2557 (0x10 bytes), align: 1
+  Segment part 40.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           LCD1602_clear           2548 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 2422 - 2445 (0x24 bytes), align: 1
+  Segment part 42.            Intra module refs:   display
+                                                   display_year
+                                                   setday
+                                                   sethour
+                                                   setmin
+                                                   setmonth
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           LCD1602_write_char      2422 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 20E0 - 212D (0x4e bytes), align: 1
+  Segment part 43.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           LCD1602_init            20E0 
+               calls direct
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 0214 - 0215 (0x2 bytes), align: 1
+  Segment part 22.            Intra module refs:   Timer_A
+                                                   display
+                                                   getCurrentTime
+                                                   sethour
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           H                       0214 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 0216 - 0217 (0x2 bytes), align: 1
+  Segment part 23.            Intra module refs:   Timer_A
+                                                   display
+                                                   getCurrentTime
+                                                   setmin
+                                                   setmonth
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           M                       0216 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 0218 - 0219 (0x2 bytes), align: 1
+  Segment part 24.            Intra module refs:   Timer_A
+                                                   display
+                                                   getCurrentTime
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           S                       0218 
+    -------------------------------------------------------------------------
+DATA16_I
+  Relative segment, address: 0200 - 0201 (0x2 bytes), align: 1
+  Segment part 25.            Intra module refs:   Timer_A
+                                                   display
+                                                   getCurrentTime
+                                                   setday
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           D                       0200 
+    -------------------------------------------------------------------------
+DATA16_I
+  Relative segment, address: 0202 - 0203 (0x2 bytes), align: 1
+  Segment part 27.            Intra module refs:   Timer_A
+                                                   display
+                                                   getCurrentTime
+                                                   setmonth
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           MON                     0202 
+    -------------------------------------------------------------------------
+DATA16_I
+  Relative segment, address: 0204 - 0205 (0x2 bytes), align: 1
+  Segment part 29.            Intra module refs:   Timer_A
+                                                   display_year
+                                                   getCurrentTime
+                                                   setyear
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           Y                       0204 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 0244 - 0244 (0x1 bytes), align: 0
+  Segment part 31.            Intra module refs:   Port_2
+                                                   setdate
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           K1                      0244 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 0245 - 0245 (0x1 bytes), align: 0
+  Segment part 32.            Intra module refs:   Port_2
+                                                   setdate
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           K2                      0245 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 0246 - 0246 (0x1 bytes), align: 0
+  Segment part 33.            Intra module refs:   Port_2
+                                                   setdate
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           K3                      0246 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 0247 - 0247 (0x1 bytes), align: 0
+  Segment part 34.            Intra module refs:   Port_2
+                                                   setdate
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           K4                      0247 
+    -------------------------------------------------------------------------
+DATA16_I
+  Relative segment, address: 020A - 0213 (0xa bytes), align: 0
+  Segment part 35.            Intra module refs:   display
+                                                   display_year
+                                                   setday
+                                                   sethour
+                                                   setmin
+                                                   setmonth
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           table                   020A 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 212E - 2177 (0x4a bytes), align: 1
+  Segment part 45.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           getCurrentTime          212E 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 2322 - 2351 (0x30 bytes), align: 1
+  Segment part 46.            Intra module refs:   Port_2
+                                                   setdate
+                                                   setday
+                                                   sethour
+                                                   setmin
+                                                   setmonth
+                                                   setyear
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           getkey                  2322 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 2090 - 20DF (0x50 bytes), align: 1
+  Segment part 51.            Intra module refs:   Port_2
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           setdate                 2090 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 22EC - 2321 (0x36 bytes), align: 1
+  Segment part 50.            Intra module refs:   setdate
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           setyear                 22EC 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 1B28 - 1BE9 (0xc2 bytes), align: 1
+  Segment part 48.            Intra module refs:   setdate
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           setmonth                1B28 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 19A0 - 1A63 (0xc4 bytes), align: 1
+  Segment part 47.            Intra module refs:   setdate
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           setday                  19A0 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 1BEA - 1CA7 (0xbe bytes), align: 1
+  Segment part 52.            Intra module refs:   Port_2
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           sethour                 1BEA 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 1A64 - 1B27 (0xc4 bytes), align: 1
+  Segment part 53.            Intra module refs:   Port_2
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           setmin                  1A64 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 1620 - 1781 (0x162 bytes), align: 1
+  Segment part 54.            Intra module refs:   Timer_A
+                                                   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           display                 1620 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 18A8 - 199F (0xf8 bytes), align: 1
+  Segment part 49.            Intra module refs:   display
+                                                   setyear
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           display_year            18A8 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 2178 - 21BF (0x48 bytes), align: 1
+  Segment part 55.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           main                    2178            Segment part 18 (?cstart)
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 1E90 - 1F03 (0x74 bytes), align: 1
+  Segment part 56.            Intra module refs:   Timer_A::??INTVEC 50
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Timer_A                 1E90 
+               interrupt function
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 1FD6 - 2039 (0x64 bytes), align: 1
+  Segment part 57.            Intra module refs:   Port_2::??INTVEC 38
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Port_2                  1FD6 
+               interrupt function
+               calls direct
+    -------------------------------------------------------------------------
+INTVEC
+  Common segment, address: FFC0 - FFE7 (0x28 bytes), align: 1
+  Segment part 17. ROOT 
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Port_2::??INTVEC 38     FFE6 
+    -------------------------------------------------------------------------
+INTVEC
+  Common segment, address: FFC0 - FFF3 (0x34 bytes), align: 1
+  Segment part 18. ROOT 
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Timer_A::??INTVEC 50    FFF2 
+    -------------------------------------------------------------------------
+DATA16_ID
+  Relative segment, address: 117E - 117F (0x2 bytes), align: 1
+  Segment part 26.            Intra module refs:   D
+    -------------------------------------------------------------------------
+DATA16_ID
+  Relative segment, address: 1180 - 1181 (0x2 bytes), align: 1
+  Segment part 28.            Intra module refs:   MON
+    -------------------------------------------------------------------------
+DATA16_ID
+  Relative segment, address: 1182 - 1183 (0x2 bytes), align: 1
+  Segment part 30.            Intra module refs:   Y
+    -------------------------------------------------------------------------
+DATA16_ID
+  Relative segment, address: 1188 - 1191 (0xa bytes), align: 0
+  Segment part 36.            Intra module refs:   table
+
+    *************************************************************************
+
+  FILE NAME : E:\SoftWare\isa\430\lib\dlib\dl430fn.r43
+  LIBRARY MODULE, NAME : ?abort
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 25D8 - 25DD (0x6 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           abort                   25D8            __record_needed_destruction (?cppinit)
+               calls direct
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?atexit
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 25CA - 25CF (0x6 bytes), align: 1
+  Segment part 3.             Intra module refs:   __iar_Atexit
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 25D0 - 25D1 (0x2 bytes), align: 1
+  Segment part 4.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __iar_Atexit            25D0            __iar_Tls_setupx__Isdst_rules (?xisdst)
+               calls direct
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?_exit
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 25AE, align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _exit                   25AE            exit (?exit)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 25AE - 25AF (0x2 bytes), align: 1
+  Segment part 1.             Intra module refs:   __cstart_call_dtors
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 25B0 - 25B3 (0x4 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __cstart_call_dtors     25B0            __record_needed_destruction (?cppinit)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 25B4 - 25B5 (0x2 bytes), align: 1
+  Segment part 5.             Intra module refs:   Segment part 1
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 25B6 - 25B9 (0x4 bytes), align: 1
+  Segment part 6.             Intra module refs:   _exit
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?cppinit
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 227C - 22B3 (0x38 bytes), align: 1
+  Segment part 5.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __alloc_record_needed_destruction
+                                   227C            Segment part 3 (?atexit)
+               calls direct
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 021A - 021B (0x2 bytes), align: 1
+  Segment part 2.             Intra module refs:   __call_dtors
+                                                   __record_needed_destruction
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 23D6 - 23FB (0x26 bytes), align: 1
+  Segment part 4.             Intra module refs:   __alloc_record_needed_destruction
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __record_needed_destruction
+                                   23D6 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 2446 - 2469 (0x24 bytes), align: 1
+  Segment part 6.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __call_dtors            2446            __cstart_call_dtors (?_exit)
+               calls indirect
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?cstart
+
+  SEGMENTS IN THE MODULE
+  ======================
+CSTACK
+  Relative segment, address: 09B0, align: 1
+  Segment part 1.
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 021C, align: 1
+  Segment part 2.
+    -------------------------------------------------------------------------
+DATA16_I
+  Relative segment, address: 0206, align: 1
+  Segment part 3.
+    -------------------------------------------------------------------------
+DATA16_ID
+  Relative segment, address: 1184, align: 1
+  Segment part 4.
+    -------------------------------------------------------------------------
+CSTART
+  Relative segment, address: 1192 - 1195 (0x4 bytes), align: 1
+  Segment part 9.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __program_start         1192            ?reset_vector (?reset_vector)
+                                                   Absolute parts (?ABS_ENTRY_MOD)
+           ?cstart_begin           1192 
+    -------------------------------------------------------------------------
+CSTART
+  Relative segment, address: 1196 - 11A1 (0xc bytes), align: 1
+  Segment part 13.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?cstart_init_zero       1196            H (main)
+                                                   K1 (main)
+                                                   K2 (main)
+                                                   K3 (main)
+                                                   K4 (main)
+                                                   M (main)
+                                                   S (main)
+                                                   Segment part 2 (?cppinit)
+                                                   Segment part 2 (?localtim)
+                                                   Segment part 2 (?xgetmemchunk)
+                                                   Segment part 2 (?xisdst)
+                                                   Segment part 4 (?localtim)
+                                                   Segment part 4 (?xisdst)
+                                                   Segment part 4 (?xttotm)
+                                                   Segment part 5 (?xisdst)
+                                                   __data16_Aldata (?xxmemxmalloc)
+                                                   __iar_Errno (?errno)
+                                                   __iar_Tls_setup__IsdstStr (?setlocale)
+                                                   __iar_Tls_setup__TzoneStr (?setlocale)
+    -------------------------------------------------------------------------
+CSTART
+  Relative segment, address: 11A2 - 11B1 (0x10 bytes), align: 1
+  Segment part 14.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?cstart_init_copy       11A2            D (main)
+                                                   MON (main)
+                                                   Y (main)
+                                                   _IsdstStr (?setlocale)
+                                                   _TzoneStr (?setlocale)
+                                                   table (main)
+    -------------------------------------------------------------------------
+CSTART
+  Relative segment, address: 11B2 - 11B9 (0x8 bytes), align: 1
+  Segment part 18.            Intra module refs:   Segment part 9
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?cstart_call_main       11B2 
+           ?cstart_end             11BA 
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?reset_vector
+
+  SEGMENTS IN THE MODULE
+  ======================
+RESET
+  Relative segment, address: FFFE - FFFF (0x2 bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?reset_vector           FFFE            Segment part 9 (?cstart)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?Epilogue
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 2568 - 2569 (0x2 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?Epilogue6              2568            _Getdst (?xgetdst)
+                                                   __iar_Isdst32 (?xisdst)
+                                                   __iar_Stoulx (?xstoul)
+                                                   __iar_Ttotm32 (?xttotm)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 256A - 256B (0x2 bytes), align: 1
+  Segment part 3.             Intra module refs:   ?Epilogue6
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?Epilogue5              256A            __iar_Stolx (?xstol)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 256C - 256D (0x2 bytes), align: 1
+  Segment part 4.             Intra module refs:   ?Epilogue5
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?Epilogue4              256C            _Gettime (?xgettime)
+                                                   _Tzoff (?localtim)
+                                                   display_year (main)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 256E - 2575 (0x8 bytes), align: 1
+  Segment part 5.             Intra module refs:   ?Epilogue4
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?Epilogue3              256E            getint (?xgetdst)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?errno
+
+  SEGMENTS IN THE MODULE
+  ======================
+DATA16_Z
+  Relative segment, address: 021C - 021D (0x2 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __iar_Errno             021C            __iar_Stolx (?xstol)
+                                                   __iar_Stoulx (?xstoul)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?exit
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 25E6 - 25E9 (0x4 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           exit                    25E6            Segment part 18 (?cstart)
+               calls direct
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?free
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 25DE - 25E1 (0x4 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           free                    25DE            _Getdst (?xgetdst)
+               calls direct
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?getzone
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 25D2 - 25D7 (0x6 bytes), align: 1
+  Segment part 3.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __getzone               25D2            _Tzoff (?localtim)
+                                                   __iar_Isdst32 (?xisdst)
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 1130 - 1131 (0x2 bytes), align: 0
+  Segment part 2.             Intra module refs:   __getzone
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?isdigit
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 2592 - 259F (0xe bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           isdigit                 2592            _Getdst (?xgetdst)
+                                                   getint (?xgetdst)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?localtim
+
+  SEGMENTS IN THE MODULE
+  ======================
+DATA16_Z
+  Relative segment, address: 021E - 021F (0x2 bytes), align: 1
+  Segment part 2.             Intra module refs:   _Tzoff
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 0220 - 0223 (0x4 bytes), align: 1
+  Segment part 4.             Intra module refs:   _Tzoff
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 1D5E - 1E09 (0xac bytes), align: 1
+  Segment part 6.             Intra module refs:   __localtime32
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _Tzoff                  1D5E 
+               calls direct and indirect
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 2488 - 24A3 (0x1c bytes), align: 1
+  Segment part 7.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __localtime32           2488            getCurrentTime (main)
+               calls direct
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?malloc
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 25EA - 25ED (0x4 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           malloc                  25EA            _Getdst (?xgetdst)
+                                                   __alloc_record_needed_destruction (?cppinit)
+               calls direct
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?DivMod816u
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 24A4 - 24BB (0x18 bytes), align: 1
+  Segment part 1.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?DivMod16u              24A4            ?DivMod16s (?DivMod816s)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?DivMod816s
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 2352 - 2381 (0x30 bytes), align: 1
+  Segment part 1.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?DivMod16s              2352            __iar_Daysto32 (?xttotm)
+                                                   __iar_Isdst32 (?xisdst)
+                                                   display (main)
+                                                   display_year (main)
+                                                   setday (main)
+                                                   sethour (main)
+                                                   setmin (main)
+                                                   setmonth (main)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?DivMod32u
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 22B4 - 22EB (0x38 bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?DivMod32u              22B4            ?DivMod32s (?DivMod32s)
+                                                   __iar_Stoulx (?xstoul)
+                                                   __iar_Ttotm32 (?xttotm)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?DivMod32s
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 2202 - 2241 (0x40 bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?DivMod32s              2202            _Tzoff (?localtim)
+                                                   __iar_Isdst32 (?xisdst)
+                                                   __iar_Ttotm32 (?xttotm)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?ShiftLeft16_n
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 25BA - 25C1 (0x8 bytes), align: 1
+  Segment part 4.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?ShiftLeft16_3          25BA            __iar_Isdst32 (?xisdst)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?memchr
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 24FE - 2511 (0x14 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __iar_Memchr            24FE            __iar_Stoulx (?xstoul)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?memcpy
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 2536 - 2547 (0x12 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           memcpy                  2536            __data16_memcpy (?memzero)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?memzero
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 2558 - 2567 (0x10 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __data16_memzero        2558            ?cstart_init_zero (?cstart)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 25E2 - 25E5 (0x4 bytes), align: 1
+  Segment part 3.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __data16_memcpy         25E2            ?cstart_init_copy (?cstart)
+               calls direct
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?Mul16to32sHw
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 24BC - 24D3 (0x18 bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?Mul16to32sHw           24BC            __iar_Isdst32 (?xisdst)
+                                                   __iar_Ttotm32 (?xttotm)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?Mul32Hw
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 2382 - 23AF (0x2e bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?Mul32Hw                2382            Segment part 8 (?xttotm)
+                                                   _Tzoff (?localtim)
+                                                   __iar_Stoulx (?xstoul)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?setlocale
+
+  SEGMENTS IN THE MODULE
+  ======================
+DATA16_I
+  Relative segment, address: 0206 - 0207 (0x2 bytes), align: 1
+  Segment part 3.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _TzoneStr               0206            _Tzoff (?localtim)
+                                                   __iar_Isdst32 (?xisdst)
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 0224 - 0225 (0x2 bytes), align: 1
+  Segment part 5.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __iar_Tls_setup__TzoneStr
+                                   0224            _Tzoff (?localtim)
+                                                   __iar_Isdst32 (?xisdst)
+    -------------------------------------------------------------------------
+DATA16_I
+  Relative segment, address: 0208 - 0209 (0x2 bytes), align: 1
+  Segment part 6.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _IsdstStr               0208            __iar_Isdst32 (?xisdst)
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 0226 - 0227 (0x2 bytes), align: 1
+  Segment part 8.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __iar_Tls_setup__IsdstStr
+                                   0226            __iar_Isdst32 (?xisdst)
+    -------------------------------------------------------------------------
+DATA16_ID
+  Relative segment, address: 1184 - 1185 (0x2 bytes), align: 1
+  Segment part 4.             Intra module refs:   _TzoneStr
+    -------------------------------------------------------------------------
+DATA16_ID
+  Relative segment, address: 1186 - 1187 (0x2 bytes), align: 1
+  Segment part 7.             Intra module refs:   _IsdstStr
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 1132 - 1132 (0x1 bytes), align: 0
+  Segment part 2.             Intra module refs:   Segment part 4
+                                                   Segment part 7
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?strchr
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 25A0 - 25AD (0xe bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __iar_Strchr            25A0            _Getdst (?xgetdst)
+                                                   _Gettime (?xgettime)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?strlen
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 2524 - 2535 (0x12 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           strlen                  2524            _Gettime (?xgettime)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?time
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 2512 - 2523 (0x12 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __time32                2512            getCurrentTime (main)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?xgetdst
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 2242 - 227B (0x3a bytes), align: 1
+  Segment part 2.             Intra module refs:   _Getdst
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           getint                  2242 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 1782 - 18A7 (0x126 bytes), align: 1
+  Segment part 3.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _Getdst                 1782            __iar_Isdst32 (?xisdst)
+               calls direct
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?xgetmemchunk
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 246A - 2487 (0x1e bytes), align: 1
+  Segment part 3.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __data16_GetMemChunk    246A            __data16_findmem (?xxmemxmalloc)
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 0228 - 0229 (0x2 bytes), align: 1
+  Segment part 2.             Intra module refs:   __data16_GetMemChunk
+    -------------------------------------------------------------------------
+DATA16_HEAP
+  Relative segment, address: 024A, align: 1
+  Segment part 4.
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?xgettime
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 203A - 208F (0x56 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _Gettime                203A            _Tzoff (?localtim)
+                                                   __iar_Isdst32 (?xisdst)
+               calls direct
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?xisdst
+
+  SEGMENTS IN THE MODULE
+  ======================
+DATA16_Z
+  Relative segment, address: 022A - 022B (0x2 bytes), align: 1
+  Segment part 2.             Intra module refs:   __iar_Isdst32
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 25C2 - 25C9 (0x8 bytes), align: 1
+  Segment part 8.             Intra module refs:   __iar_Tls_setupx__Isdst_rules
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           __iar_Tls_dtor__Isdst_rules
+                                   25C2 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 24D4 - 24E9 (0x16 bytes), align: 1
+  Segment part 9.             Intra module refs:   __iar_Isdst32
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           __iar_Tls_setupx__Isdst_rules
+                                   24D4 
+               calls direct
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 022C - 022D (0x2 bytes), align: 1
+  Segment part 4.             Intra module refs:   __iar_Isdst32
+                                                   __iar_Tls_dtor__Isdst_rules
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 0248 - 0248 (0x1 bytes), align: 0
+  Segment part 5.             Intra module refs:   __iar_Tls_setupx__Isdst_rules
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 14BA - 161F (0x166 bytes), align: 1
+  Segment part 10.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __iar_Isdst32           14BA            __iar_Ttotm32 (?xttotm)
+               calls direct and indirect
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?xstol
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 1CA8 - 1D5D (0xb6 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __iar_Stolx             1CA8            _Tzoff (?localtim)
+               calls direct
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?xstoul
+
+  SEGMENTS IN THE MODULE
+  ======================
+DATA16_C
+  Relative segment, address: 1133 - 1157 (0x25 bytes), align: 0
+  Segment part 2.             Intra module refs:   __iar_Stoulx
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 1158 - 117C (0x25 bytes), align: 0
+  Segment part 3.             Intra module refs:   __iar_Stoulx
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 11BA - 134B (0x192 bytes), align: 1
+  Segment part 4.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __iar_Stoulx            11BA            __iar_Stolx (?xstol)
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 2576 - 2583 (0xe bytes), align: 1
+  Segment part 5.             Intra module refs:   __iar_Stoulx
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?xttotm
+
+  SEGMENTS IN THE MODULE
+  ======================
+DATA16_C
+  Relative segment, address: 1100 - 1117 (0x18 bytes), align: 1
+  Segment part 2.             Intra module refs:   __iar_Daysto32
+                                                   __iar_Ttotm32
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 1118 - 112F (0x18 bytes), align: 1
+  Segment part 3.             Intra module refs:   __iar_Daysto32
+                                                   __iar_Ttotm32
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 022E - 023F (0x12 bytes), align: 1
+  Segment part 4.             Intra module refs:   __iar_Ttotm32
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 21C0 - 2201 (0x42 bytes), align: 1
+  Segment part 6.             Intra module refs:   __iar_Ttotm32
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __iar_Daysto32          21C0            __iar_Isdst32 (?xisdst)
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 134C - 14B9 (0x16e bytes), align: 1
+  Segment part 7.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __iar_Ttotm32           134C            __localtime32 (?localtim)
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 2584 - 2591 (0xe bytes), align: 1
+  Segment part 8.             Intra module refs:   __iar_Ttotm32
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?__exit
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 25EE - 25EF (0x2 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __exit                  25EE            Segment part 6 (?_exit)
+                                                   _exit (?_exit)
+                                                   abort (?abort)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?xxmemxfree
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 1E0A - 1E8F (0x86 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __data16_free           1E0A            __data16_findmem (?xxmemxmalloc)
+                                                   __iar_Isdst32 (?xisdst)
+                                                   __iar_Tls_dtor__Isdst_rules (?xisdst)
+                                                   free (?free)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?xxmemxmalloc
+
+  SEGMENTS IN THE MODULE
+  ======================
+DATA16_Z
+  Relative segment, address: 0240 - 0243 (0x4 bytes), align: 1
+  Segment part 2.             Intra module refs:   __data16_findmem
+                                                   __data16_malloc
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __data16_Aldata         0240            __data16_free (?xxmemxfree)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 1F72 - 1FD5 (0x64 bytes), align: 1
+  Segment part 3.             Intra module refs:   __data16_malloc
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           __data16_findmem        1F72 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 1F04 - 1F71 (0x6e bytes), align: 1
+  Segment part 4.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __data16_malloc         1F04            malloc (?malloc)
+               calls direct
+
+
+
+
+                ****************************************
+                *                                      *
+                *      SEGMENTS IN ADDRESS ORDER       *
+                *                                      *
+                ****************************************
+
+
+SEGMENT              SPACE    START ADDRESS   END ADDRESS     SIZE  TYPE  ALIGN
+=======              =====    =============   ===========     ====  ====  =====
+DATA16_AN                              0019 - 001B               3   rel    0
+                                       001D - 001F               3 
+                                       0021 - 0022               2 
+                                       0028 - 0028               1 
+                                       002B - 002D               3 
+                                       0120 - 0121               2 
+                                       0160 - 0163               4 
+                                       0172 - 0173               2 
+DATA16_I                               0200 - 0213              14   rel    1
+DATA16_Z                               0214 - 0248              35   rel    1
+DATA16_HEAP                            024A - 0299              50   rel    1
+CSTACK                                 09B0 - 09FF              50   rel    1
+DATA16_C                               1100 - 117C              7D   rel    1
+DATA16_ID                              117E - 1191              14   rel    1
+CSTART                                 1192 - 11B9              28   rel    1
+<CODE> 1                               11BA - 25EF            1436   rel    1
+INTVEC                                 FFC0 - FFF3              34   com    1
+RESET                                  FFFE - FFFF               2   rel    1
+
+                ****************************************
+                *                                      *
+                *        END OF CROSS REFERENCE        *
+                *                                      *
+                ****************************************
+
+ 5 268 bytes of CODE  memory
+   233 bytes of DATA  memory (+ 20 absolute )
+   145 bytes of CONST memory
+
+Errors: none
+Warnings: none
+

@@ -1,0 +1,6 @@
+[Sfr]
+sfr = "UCA1MCTL",	"Memory",	0xd4,	1,	base=16,	modified
+
+
+[SfrGroupInfo]
+group = "Custom", "UCA1MCTL"

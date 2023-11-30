@@ -1,0 +1,6 @@
+[Sfr]
+sfr = "MPY",	"Memory",	0x130,	2,	base=16,	modified
+
+
+[SfrGroupInfo]
+group = "Custom", "MPY"
